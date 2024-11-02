@@ -9,7 +9,6 @@ import Discuss from "parts/Discuss";
 import Footer from "parts/Footer";
 import OurProcess from "parts/OurProcess";
 import Button from "parts/ButtonMain"; // Import the Button component
-// import ContactForm from "parts/ContactForm";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -33,7 +32,6 @@ const LandingPage = () => {
       <Advantage data={Advantages} />
       <OurProcess />
       <Testimonial data={Testimonials} />
-      {/* <ContactForm /> */}
       <Discuss />
       <Footer />
       <Button onClick={redirectToWhatsApp}>Message Us</Button>

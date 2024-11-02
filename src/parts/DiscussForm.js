@@ -8,11 +8,8 @@
 import React from "react";
 
 import { Fade } from "react-awesome-reveal";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import * as emailjs from "@emailjs/browser";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { ToastContainer, toast } from "react-toastify";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import "react-toastify/dist/ReactToastify.css";
 
 import { Form } from "elements/Form";
@@ -46,7 +43,7 @@ export const DiscussForm = (actions) => {
         )
         .then(
           () => {
-            toast.success("Success! We'll get back to you soon. Thank you!");
+            toast.success("Success! we'll get back to you soon. Thank you!");
             resetForm();
           },
           (error) => {
@@ -62,14 +59,15 @@ export const DiscussForm = (actions) => {
     <section className="flex flex-col container mx-auto mt-10 justify-center">
       <Fade direction="down" triggerOnce>
         <h1 className="text-5xl text-theme-blue text-center font-bold">
-          Let’s Discuss
+          Lets Discuss
         </h1>
       </Fade>
 
       <Fade direction="up" triggerOnce>
         <p className="font-light text-lg text-gray-400 text-center mb-12">
-          Please fill out the form below to discuss your project and we&apos;ll
-          get back to you in less than 24 hours.
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          Please fill out the form below to discuss your project and we'll get
+          back to you in less than 24 hours.
         </p>
       </Fade>
 
@@ -82,7 +80,6 @@ export const DiscussForm = (actions) => {
               type="text"
               value={data.name}
               placeholder="Your name"
-              className=""
               onChange={actions.onChange}
             />
             <Form
@@ -91,7 +88,6 @@ export const DiscussForm = (actions) => {
               type="text"
               value={data.company}
               placeholder="Your company"
-              className=""
               onChange={actions.onChange}
             />
           </div>
@@ -103,7 +99,6 @@ export const DiscussForm = (actions) => {
               type="email"
               value={data.email}
               placeholder="Your email address"
-              className=""
               onChange={actions.onChange}
             />
             <Form
@@ -112,7 +107,6 @@ export const DiscussForm = (actions) => {
               type="number"
               value={data.phone}
               placeholder="Your contact number"
-              className=""
               onChange={actions.onChange}
             />
           </div>
@@ -124,7 +118,6 @@ export const DiscussForm = (actions) => {
               type="textarea"
               value={data.projectIdea}
               placeholder="Explain about your project idea"
-              className=""
               onChange={actions.onChange}
             />
           </div>
