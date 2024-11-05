@@ -23,7 +23,7 @@ export default function Header() {
       <div className="flex justify-between px-4 lg:px-0">
         <BrandIcon />
 
-        <button
+        {/* <button
           className="block text-theme-blue lg:hidden focus:outline-none"
           onClick={() => setIsCollapse(!isCollapse)}
         >
@@ -49,11 +49,11 @@ export default function Header() {
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
-        </button>
+        </button> */}
       </div>
 
       <ul className="hidden text-theme-blue tracking-widest items-center lg:flex flex-row mt-0">
-        <li>
+        {/* <li>
           <Button
             className={`${
               path === "/" ? "active-link" : ""
@@ -63,7 +63,7 @@ export default function Header() {
           >
             Home
           </Button>
-        </li>
+        </li> */}
         {/* 
         <li className="py-2 lg:py-0">
           <Button
@@ -87,15 +87,15 @@ export default function Header() {
             Project
           </Button>
         </li> */}
-        <li>
+        {/* <li>
           <Button
             className="font-medium text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200"
             type="link"
-            href="/discuss-project"
+            href="/contact"
           >
             Contact Us{" "}
           </Button>
-        </li>
+        </li> */}
       </ul>
 
       <Transition
@@ -107,8 +107,7 @@ export default function Header() {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div className="transition duration-300 ease-in data-[closed]:opacity-0">
-          {/* <Fade> */}
+        {/* <div className="transition duration-300 ease-in data-[closed]:opacity-0">
           <ul className="z-50 flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden">
             <li className="py-2 bg-white">
               <Button
@@ -122,7 +121,7 @@ export default function Header() {
               </Button>
             </li>
 
-            {/* <li className="py-2 bg-white">
+            <li className="py-2 bg-white">
               <Button
                 className={`${
                   path === "/team" ? "active-link" : ""
@@ -132,8 +131,8 @@ export default function Header() {
               >
                 Team
               </Button>
-            </li> */}
-            {/* <li className="py-2 bg-white">
+            </li>
+            <li className="py-2 bg-white">
               <Button
                 className={`${
                   path === "/team" ? "active-link" : ""
@@ -143,8 +142,8 @@ export default function Header() {
               >
                 Team
               </Button>
-            </li> */}
-            {/* <li className="py-2 bg-white">
+            </li>
+            <li className="py-2 bg-white">
               <Button
                 className={`${
                   path === "/project" ? "active-link" : ""
@@ -154,19 +153,19 @@ export default function Header() {
               >
                 Project
               </Button>
-            </li> */}
+            </li>
             <li className="mx-auto my-9 bg-white">
               <Button
                 className="font-bold mx-auto px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200"
                 type="link"
-                href="/discuss-project"
+                href="/contact"
               >
                 Contact Us{" "}
               </Button>
             </li>
           </ul>
-          {/* </Fade> */}
-        </div>
+          </Fade>
+        </div> */}
       </Transition>
     </header>
   );

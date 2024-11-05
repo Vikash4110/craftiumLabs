@@ -14,6 +14,7 @@ import { ProjectDetailPage } from "pages/ProjectDetailPage";
 // import { DiscussProjectPage } from "pages/DiscussProjectPage";
 import Service from "parts/Service";
 import "./assets/css/styles.css";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/project" element={<ProjectPage />} />
         <Route exact path="/project/:id" element={<ProjectDetailPage />} />
         <Route exact path="/team" element={<TeamPage />} />
+        <Route exact path="/contact" element={<Contact />} />
         {/* <Route exact path="/discuss-project" element={<DiscussProjectPage />} /> */}
         <Route path="**" element={<NotFoundPage />} />
       </Routes>

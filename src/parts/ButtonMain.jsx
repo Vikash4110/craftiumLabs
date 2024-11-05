@@ -20,10 +20,10 @@ Button.propTypes = {
 };
 
 const StyledWrapper = styled.div`
-  position: fixed; /* Keep it fixed */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-  z-index: 1000; /* Ensure it's above other content */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 
   button {
     width: 165px;
@@ -62,6 +62,15 @@ const StyledWrapper = styled.div`
       rgba(2, 245, 255, 1) 100.2%
     );
     transition: 0.5s;
+  }
+
+  // Add media query for smaller screens
+  @media (max-width: 600px) {
+    button {
+      width: 120px;
+      height: 48px;
+      font-size: 14px;
+    }
   }
 `;
 

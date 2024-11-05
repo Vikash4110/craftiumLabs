@@ -8,7 +8,8 @@ import Testimonial from "parts/Testimonial";
 import Discuss from "parts/Discuss";
 import Footer from "parts/Footer";
 import OurProcess from "parts/OurProcess";
-import Button from "parts/ButtonMain"; // Import the Button component
+import Button from "parts/ButtonMain";
+import Service2 from "parts/Service2";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const LandingPage = () => {
     <>
       <Header />
       <Hero />
+      <Service2 />
       <Service data={Services} />
       <Advantage data={Advantages} />
       <OurProcess />
